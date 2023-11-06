@@ -114,7 +114,6 @@ const Slider: React.FC<SliderProps> = ({
       ((low - min) / (max - min)) * (containerWidth - thumbWidth);
     lowThumbX.setValue(lowPosition);
     updateSelectedRail();
-    onValueChanged?.(low, high, false);
   }, [
     disableRange,
     inPropsRef,
